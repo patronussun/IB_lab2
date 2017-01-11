@@ -25,7 +25,7 @@ namespace IB_lab2
             Generator g = new Generator(Generator.Type.Key);
             Encrypting.KEY = g.Generate_key();
             Key_tb.Text = Encrypting.KEY;
-            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"D:\!_USERS\Maria\desktop\!иб2\IB_lab2\IB_lab2\bin\Debug\KEY.txt"))
+            using (System.IO.StreamWriter file = new System.IO.StreamWriter(@"\bin\Debug\KEY.txt"))
             {
                 file.WriteLine(Encrypting.KEY);
                 file.Close();
